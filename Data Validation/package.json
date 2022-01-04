@@ -1,0 +1,23 @@
+{
+  "name": "data-validation-for-nodejs-server-side-application",
+  "version": "1.0.0",
+  "description": "Learning data for node js server-side applications",
+  "main": "app.js",
+  "scripts": {
+    "start-dev": "nodemon server.js",
+    "start-prod": "NODE_ENV=production nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arnold ighiwiyisi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0",
+    "validator": "^13.7.0"
+  }
+}
