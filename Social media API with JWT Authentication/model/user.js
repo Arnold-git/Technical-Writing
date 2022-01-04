@@ -29,5 +29,9 @@ const userSchema = new mongoose.Schema({
       },
       message: 'Password and passwordConfirm must be the same',
     },
+    profilePicture: String,
+    passwordChangedAt: Date,
+    passwordResetToken: String,
+    passwordResetExpires: Date,
   },
 });
