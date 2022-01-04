@@ -27,6 +27,7 @@ const userSchema = new mongoose.Schema({
       validator: function (passwordConfirm) {
         return passwordConfirm === this.password;
       },
+      message: 'Password and passwordConfirm must be the same',
     },
   },
 });
