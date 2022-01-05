@@ -36,3 +36,7 @@ const userSchema = new mongoose.Schema({
     passwordResetExpires: Date,
   },
 });
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;
