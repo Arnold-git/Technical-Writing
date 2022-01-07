@@ -36,6 +36,9 @@ const userSchema = new mongoose.Schema({
     passwordResetExpires: Date,
   },
 });
+//**Document Middleware to Encrypt Password */
+userSchema.
+
 
 const User = mongoose.model('User', userSchema);
 
