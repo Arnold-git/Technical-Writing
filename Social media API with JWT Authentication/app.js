@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 
+const userRouter = require('./routes/userRoutes');
+
 const app = express();
 
 if (process.env.NODE_ENV === 'developement') {
@@ -17,6 +19,8 @@ app.get('/', (req, res) => {
     message: 'Welcome Data Validationn article API',
   });
 });
+
+app.use('/api/v1/user', userRouter);
 
 app.all('*', (req, res) => {
   return res.status(404).json({
